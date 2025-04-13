@@ -27,7 +27,7 @@ export default function HomePage() {
         skipEmptyLines: true,
       });
 
-      let data1 = parsed1.data as CSVRow[];
+      const data1 = parsed1.data as CSVRow[];
       setHeaders1(parsed1.meta.fields || []);
       setTable1(data1);
 
@@ -36,7 +36,7 @@ export default function HomePage() {
         header: true,
         skipEmptyLines: true,
       });
-      let data2 = parsed2.data as CSVRow[];
+      const data2 = parsed2.data as CSVRow[];
 
       setHeaders2(parsed2.meta.fields || []);
       setTable2(data2);
